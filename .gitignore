@@ -1,0 +1,21 @@
+
+# Java compiled files
+*.class
+bin/
+target/
+out/
+
+# Eclipse settings
+.metadata/
+.settings/
+
+# Other IDE files
+.idea/
+*.iml
+
+# Local simulation data
+*.ser
+
+# Operating system files
+.DS_Store
+Thumbs.db
