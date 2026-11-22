@@ -195,6 +195,11 @@ public class AccountService {
         return grant;
     }
 
+    public List<AccessRequest> getAllRequests(User actor) {
+        requireAdmin(actor);
+        return new ArrayList<>(state.getRequests().values());
+    }
+
     public List<AccessRequest> getPendingRequests(User actor) {
         requireAdmin(actor);
 
